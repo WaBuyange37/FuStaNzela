@@ -17,20 +17,6 @@ let data = [
   [10, 20, [100, 200, 300]],
 ];
 
-// Deep clone function
-function deepClone(arr) {
-  return arr.map((item) =>
-    Array.isArray(item)
-      ? deepClone(item)
-      : typeof item === "object"
-      ? { ...item }
-      : item
-  );
-}
-
-// Clone the data deeply
-let clonedData = deepClone(data);
-
 // Modify the cloned data
 clonedData[0][1] = "Mango";
 clonedData[1].age = 30;
