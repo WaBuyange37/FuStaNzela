@@ -4,15 +4,16 @@ function speedChecker(speed){
   const speedLimit = 70;
   const speedPoint = 5;
   if(speed <= speedLimit){
-    console.log("Ok")
+    console.log("Ok");
+    return;
   }
+
+  const points = Math.floor((speed-speedLimit)/speedPoint);
+  if(points>=12){
+    console.log("baragufunga woe")
+    }
   else{
-     const points = Math.floor((speed-speedLimit)/speedPoint);
-     if(points>=12){
-      console.log("baragufunga woe")
-     }
-     else{
-      console.log('points is: ', points);
-     }
+    console.log('points is: ', points);
   }
+  
 }
