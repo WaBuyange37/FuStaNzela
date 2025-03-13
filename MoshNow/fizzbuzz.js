@@ -1,6 +1,6 @@
 // divisible by 3 we get Fizz
 // divisible by 5we get BUzz
-// divisible by both 3 and 5 we get Fizz
+// divisible by both 3 and 5 we get Fizzbuzz
 // !divisible by 3 and 5 we get that number
 function fizzBuzz(number){
   //  if(number % 3 === 0 && number % 5 === 0){
@@ -21,5 +21,5 @@ function fizzBuzz(number){
           : (typeof number !=="number") ? "not a number"
           : number;
 }
-let k = fizzBuzz(15);
+let k = fizzBuzz("hello");
 console.log(k)
