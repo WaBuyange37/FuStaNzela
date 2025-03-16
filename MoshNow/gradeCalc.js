@@ -5,13 +5,8 @@ let marks = [80,80,50];
 calculateGrade(marks);
 
 function calculateGrade(marks){
-  let avarage = 0;
-  let sum=0;
+  let avarage= findAvarage(marks);
   let Grade= '';
-  for (let i of marks)
-    sum+=i;
-  avarage=sum/marks.length;
-  
   if(avarage<=59){
     Grade='F'
       
@@ -36,4 +31,12 @@ function calculateGrade(marks){
   
   
   console.log(avarage+":",Grade);
+}
+
+function findAvarage(marks){
+  //let avarage = 0;
+  let sum=0;
+  for (let i of marks)
+    sum+=i;
+  return sum/marks.length;
 }
