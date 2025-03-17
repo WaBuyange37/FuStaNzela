@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mugisha Bank Trial</title>
+</head>
+<body>
+  <header class="head">
+    <h1><span id="name"></span> Bank Account<Span style="padding: 70px; margin-left: 55%;" id="money"></Span></h1>
+  </header>
+  
+  <div id="start">
+    <form method="get">
+      <fieldset>
+        <legend>Twagiye man</legend>
+
+        <div>
+          <label for="name">Your Name:</label>
+          <input type="text" id="nameIn" name="name" required>
+        </div>
+
+        <div>
+          <label for="deposit">Deposit:</label>
+          <input type="number" id="deposit" name="deposit" required>
+        </div>
+
+        <div>
+          <label for="withdraw">Withdraw:</label>
+          <input type="number" id="withdraw" name="withdraw">
+        </div>
+
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </div>
+
+  <script src="./account.js"></script>
+</body>
+</html>
