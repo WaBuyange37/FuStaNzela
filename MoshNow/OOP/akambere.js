@@ -14,4 +14,12 @@ let circle = {
       console.log('false neveer show');}
   },
 }
-circle.draw();
+// circle.draw();
+/**for(let key of Object.keys(circle))
+  console.log(key, circle[key])*/
+
+for(let key of Object.entries(circle))
+  console.log(key, circle[key])
+if('drawo' in circle) 
+  console.log("yes")
+  else console.log('no')
