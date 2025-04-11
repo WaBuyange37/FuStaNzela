@@ -5,10 +5,10 @@ function createCar(brand,model,Year){
     brand,
     model,
     Year,
-    getCarInfo: function(){
+    get getCarInfo( ){
       return `${brand} ${model} (${Year})`
     }
   }
 }
 let firstCar=createCar('Toyota', 'collora', 2020);
-console.log(firstCar.getCarInfo());
+console.log(firstCar.getCarInfo);
