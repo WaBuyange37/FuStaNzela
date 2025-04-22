@@ -1,5 +1,19 @@
 const fs = require("fs").promises;
 const readline = require("readline");
+const args = process.argv.slice(2);
+
+const name = args[0];
+const location = args[1];
+const age = args[2];
+
+let result = `Player ${name} of ${age}years old
+utuye ${location} prayed number guesseer\n`;
+fs.writeFile("result.txt", result, 'utf-8').then(()=>{
+  console.log("")
+}).catch(err =>{
+  console.log(err)
+});
+
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
